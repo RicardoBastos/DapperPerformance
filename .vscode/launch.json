@@ -1,0 +1,47 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": ".NET Core Launch (web)",
+            "type": "coreclr",
+            "request": "launch",
+            "launchBrowser": {
+                "enabled": false
+            },
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/Cadastro.Parceiros.API/bin/Debug/net6.0/Cadastro.Parceiros.API.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/Cadastro.Parceiros.API",
+            "stopAtEntry": false,
+            "serverReadyAction": {
+                "action": "openExternally",
+                "pattern": "\\bNow listening on:\\s+(https?://\\S+)",
+                "uriFormat": "%s/swagger/index.html"
+            },
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development"
+            },
+            "sourceFileMap": {
+                "/Views": "${workspaceFolder}/Views"
+            }
+        },
+        {
+            "name": ".NET Core Attach",
+            "type": "coreclr",
+            "request": "attach"
+        },
+        {
+            "name": "Launch .NET Core in Docker",
+            "type": "docker",
+            "request": "launch",
+            "preLaunchTask": "Run Docker Container",
+            "netCore": {
+                "appProject": "${workspaceFolder}/Cadastro.Parceiros.API/Cadastro.Parceiros.API.csproj"
+
+            }
+        }
+    ]
+}

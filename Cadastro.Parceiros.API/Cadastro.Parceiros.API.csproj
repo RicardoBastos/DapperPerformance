@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>e51fa8cd-332d-47b8-a40c-b9e802262120</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.17.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Cadastro.Parceiros.Domain\Cadastro.Parceiros.Domain.csproj" />
+    <ProjectReference Include="..\Cadastro.Parceiros.Infra.CrossCutting\Cadastro.Parceiros.Infra.CrossCutting.csproj" />
+    <ProjectReference Include="..\Cadastro.Parceiros.Infra\Cadastro.Parceiros.Infra.csproj" />
+    <ProjectReference Include="..\Cadastro.Parceiros.Service\Cadastro.Parceiros.Service.csproj" />
+  </ItemGroup>
+
+</Project>

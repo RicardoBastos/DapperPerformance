@@ -1,0 +1,31 @@
+# Please refer https://aka.ms/HTTPSinContainer on how to setup an https developer certificate for your ASP .NET Core service.
+
+version: '3.4'
+
+services:
+  cadastroparceirosapi:
+    container_name: cadastro-api
+    image: cadastroapi
+    build:
+      context: .
+      dockerfile: Cadastro.Parceiros.API/Dockerfile
+    ports:
+      - 5182:80
+    networks:
+      - casa
+    depends_on:
+        - sqlserver
+  sqlserver:
+    container_name: sqlserver 
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    environment:
+      SA_PASSWORD: 1q2w3e4r@#$
+      ACCEPT_EULA: Y
+    ports:
+      - "1433:1433"
+    networks:
+      - casa
+
+networks: 
+    casa:
+        driver: bridge
