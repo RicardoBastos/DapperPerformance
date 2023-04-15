@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace Cadastro.Parceiros.Domain.Requests
 {
-    public class CadastrarClienteRequest
+    public class CadastrarCategoriaRequest1
     {
-        public int IdCliente { get; set; }
-        public string? Cpf { get; set; }
+        public string Nome { get; set; }
     }
 }

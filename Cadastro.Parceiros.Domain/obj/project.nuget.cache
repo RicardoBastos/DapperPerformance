@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "Mv1eiH1NsqJkNxx7PaqxnktxZD8a/M3GrpBMoX/9fnmF5p5AKheyx2Ygz97rUCplDgzpu2qTM11EmDlkiqWb3w==",
+  "dgSpecHash": "hY3gBVzrJt2UcbXPI63B+903qNjVjRqnvgTow5nhF6hG2WInCA/vqfMNtF4j/lA2V6aweSHNT3LSYgK0mQ1lfQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Ricardo\\Downloads\\Cadastro.Parceiros\\Cadastro.Parceiros.Domain\\Cadastro.Parceiros.Domain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Ricardo\\.nuget\\packages\\dapper\\2.0.78\\dapper.2.0.78.nupkg.sha512",
+    "C:\\Users\\Ricardo\\.nuget\\packages\\dapper.contrib\\2.0.78\\dapper.contrib.2.0.78.nupkg.sha512"
+  ],
   "logs": []
 }

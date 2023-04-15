@@ -1,4 +1,5 @@
 ﻿using Cadastro.Parceiros.Domain.Interfaces;
+using Cadastro.Parceiros.Domain.Interfaces.Repositories;
 
 namespace Cadastro.Parceiros.Infra
 {
@@ -6,9 +7,15 @@ namespace Cadastro.Parceiros.Infra
     {
         private readonly SessionDB _session;
 
-        public UnitOfWork(SessionDB session)
+        public IProdutoRepository Produto { get; }
+        public ICategoriaRepository Categoria { get; }
+
+
+        public UnitOfWork(SessionDB session, ICategoriaRepository categoriaRepository, IProdutoRepository produtoRepository)
         {
             _session = session;
+            Produto = produtoRepository;
+            Categoria = categoriaRepository;
         }
 
         public void BeginTransaction()
@@ -28,6 +35,9 @@ namespace Cadastro.Parceiros.Infra
             Dispose();
         }
 
-        public void Dispose() => _session.Transaction?.Dispose();
+        public void Dispose()
+        {
+            _session.Transaction?.Dispose();
+        }
     }
 }

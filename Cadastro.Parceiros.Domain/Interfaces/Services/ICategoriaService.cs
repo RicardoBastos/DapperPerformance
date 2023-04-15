@@ -8,11 +8,9 @@ using System.Threading.Tasks;
 
 namespace Cadastro.Parceiros.Domain.Interfaces.Services
 {
-    public interface IClienteService
+    public interface ICategoriaService
     {
-        Task<ObterClientePorCpfResponse> ObterClientePorCpf(string cpf);
-
-        Task CadastrarCliente(CadastrarClienteRequest request);
+        Task CadastrarCategoria(CadastrarCategoriaRequest1 request);
 
     }
 }

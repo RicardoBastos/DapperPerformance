@@ -11,10 +11,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cadastro.Parceiros.Infra", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cadastro.Parceiros.Service", "Cadastro.Parceiros.Service\Cadastro.Parceiros.Service.csproj", "{DBE8C31B-568B-42A5-855D-6312A8D1AD01}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cadastro.Parceiros.Infra.Environment", "Cadastro.Parceiros.Infra.Environment\Cadastro.Parceiros.Infra.Environment.csproj", "{7C9D76FE-156A-4B65-8EED-217BE15BDFFF}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cadastro.Parceiros.Infra.CrossCutting", "Cadastro.Parceiros.Infra.CrossCutting\Cadastro.Parceiros.Infra.CrossCutting.csproj", "{EC4CDD2D-252D-4609-A1BC-9D75ED68E339}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
